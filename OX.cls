@@ -1,3 +1,23 @@
+Private Sub Worksheet_Change(ByVal Target As Range)
+
+If Not Intersect(Target, Range("A1:c3")) Is Nothing Then
+
+
+
+    'autorun macro
+
+
+
+
+
+End If
+    
+End Sub
+
+
+
+
+
 VERSION 1.0 CLASS
 BEGIN
   MultiUse = -1  'True
@@ -37,11 +57,13 @@ MsgBox r(1, i) & " win"
 Exit For
 End If
 Next i
-
-
-
-
 End Sub
+
+
+
+
+
+
 
 Private Sub CommandButton2_Click()
 Dim rng As Range
