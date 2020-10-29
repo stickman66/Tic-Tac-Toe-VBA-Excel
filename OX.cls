@@ -17,7 +17,7 @@ End Sub
 Private Sub Worksheet_Change(ByVal Target As Range)
 If Not Intersect(Target, Range("A1:c3")) Is Nothing Then
 Dim r(1 To 3, 1 To 3) As String, p(1 To 3, 1 To 3) As String, i As Integer, j As Integer
-    'create matrice
+    'create matrix
 For i = 1 To 3
 For j = 1 To 3
 r(i, j) = Cells(i, j).Value
